@@ -2,7 +2,7 @@
 sudo apt update
 sudo apt upgrade
 sudo apt install -y build-essential ca-certificates curl
-sudo apt install -y zlib1g-dev libssl-dev zlib zlibc lzma libbz2-dev libsqlite3-dev libreadline-dev libffi-dev
+sudo apt install -y zlib1g-dev libssl-dev lzma libbz2-dev libsqlite3-dev libreadline-dev libffi-dev
  
 # install docker
 sudo apt-get update
