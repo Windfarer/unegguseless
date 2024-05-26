@@ -16,10 +16,9 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
-
 ## init nvidia stack
 # get download link https://www.nvidia.com/download/driverResults.aspx/224350/en-us/
-wget http:///NVIDIA-Linux-x86_64-550.54.15.run
+wget http://url-for/NVIDIA-Linux-x86_64-550.54.15.run
 
 chmod +x NVIDIA-Linux-x86_64-550.54.15.run 
 
