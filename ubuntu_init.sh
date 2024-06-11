@@ -37,12 +37,14 @@ sudo apt-get install -y nvidia-container-toolkit
 sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 
-# install python env
-curl https://pyenv.run | bash
+# # install python env
+# curl https://pyenv.run | bash
 
-vim .bashrc
+# vim .bashrc
 
-pyenv install 3.10
-pyenv global 3.10
+# pyenv install 3.10
+# pyenv global 3.10
+
+sudo apt-get install python3-venv
 
 curl -sSL https://install.python-poetry.org | python3 -
