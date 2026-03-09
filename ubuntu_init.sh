@@ -23,7 +23,6 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 
 ## enable bbr
-
 cat >> /etc/sysctl.conf <<EOF
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
