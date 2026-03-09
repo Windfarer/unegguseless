@@ -22,6 +22,15 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
+## enable bbr
+
+cat >> /etc/sysctl.conf <<EOF
+net.core.default_qdisc=fq
+net.ipv4.tcp_congestion_control=bbr
+EOF
+
+sysctl -p
+
 ## init nvidia stack
 # get download link https://www.nvidia.com/download/driverResults.aspx/224350/en-us/
 wget http://url-for/NVIDIA-Linux-x86_64-550.54.15.run
